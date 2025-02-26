@@ -8,6 +8,5 @@ import { RedisService, Config } from '@myria/redis-js';
         isEnableRedisTLS: false,
         redisPassword: "localhost"
     })
-
     const redisService = RedisService.getInstance(config);
 })();
