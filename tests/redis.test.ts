@@ -36,14 +36,14 @@ describe('RedisService', () => {
         redisService = RedisService.getInstance(config);
     });
 
-    // Clean up after each test
     afterEach(async () => {
         await redisService.flushAll();
     });
 
-    // Stop Redis server after all tests
     afterAll(async () => {
+        await redisService.disconnect();
         await redisServer.stop();
+        (RedisService as any).instance = undefined;
     });
 
     it('should be a singleton', () => {
