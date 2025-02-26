@@ -1,1 +1,1 @@
-export * from './CommonType';
+export * from "./CommonType";

@@ -1,6 +1,6 @@
-import Redis, { RedisOptions } from 'ioredis';
-import { Config } from '../config';
-import { ResponseItem } from '../type';
+import Redis, { RedisOptions } from "ioredis";
+import { Config } from "../config";
+import { ResponseItem } from "../type";
 
 export class RedisService {
     private readonly redisMaster: Redis;
@@ -29,9 +29,9 @@ export class RedisService {
         this.redisReplica = new Redis({
             ...option,
             host: redisReplicaHost,
-            role: 'slave',
+            role: "slave",
         });
-        this.redisMaster = new Redis({ ...option, role: 'master' });
+        this.redisMaster = new Redis({ ...option, role: "master" });
 
         // Verify connection on startup
         this.verifyConnections();
@@ -42,7 +42,7 @@ export class RedisService {
         if (!RedisService.instance) {
             if (!configService) {
                 throw new Error(
-                    'ConfigService is required for first initialization',
+                    "ConfigService is required for first initialization",
                 );
             }
             RedisService.instance = new RedisService(configService);
@@ -81,7 +81,7 @@ export class RedisService {
     }
 
     async deleteItemsByPrefixKey(
-        itemPrefix = '',
+        itemPrefix = "",
     ): Promise<string[] | undefined> {
         const pattern = `${itemPrefix}*`;
         const keys = await this.redisMaster.keys(pattern);
@@ -137,7 +137,7 @@ export class RedisService {
                 this.redisMaster.ping(),
                 this.redisReplica.ping(),
             ]);
-            console.log('Start Redis servers successful');
+            console.log("Start Redis servers successful");
         } catch (error) {
             throw new Error(`Failed to connect to Redis: ${error.message}`);
         }

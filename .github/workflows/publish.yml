@@ -54,7 +54,7 @@ jobs:
             - name: show npm config
               run: cat $NPM_CONFIG_USERCONFIG
             - name: Install dependencies
-              run: npm ci
+              run: npm install
             - name: Build package
               run: npm run build
             - name: Publish package to NPM registry

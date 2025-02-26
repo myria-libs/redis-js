@@ -1,1 +1,1 @@
-export * from './wait-time';
+export * from "./wait-time";

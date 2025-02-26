@@ -2,7 +2,7 @@
  * Config module.
  * @module Config
  */
-import { ConfigOptions } from '../type';
+import { ConfigOptions } from "../type";
 /**
  * Centralize your configuration in Config class
  * @class
