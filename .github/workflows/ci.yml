@@ -32,4 +32,4 @@ jobs:
             - name: Build package
               run: npm run build
             - name: Verify Unit test
-              run: npm run test
+              run: npm run test:ci
