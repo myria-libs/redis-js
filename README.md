@@ -8,7 +8,7 @@
 
 <!-- [![NPM Install Size](https://badgen.net/packagephobia/install/@myria/redis-js)](https://packagephobia.com/result?p=@myria%2Fredis-js) -->
 
-Supports re-use redis instances
+Interact with redis cache follow CQRS pattern
 
 ## Prerequisites
 

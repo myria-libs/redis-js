@@ -1,7 +1,12 @@
 import { RedisService } from '../src/service/RedisService';
 import { Config } from '../src/config/Config';
-import { redisCacheKey, waitTime } from '../src/utils';
 import RedisMemoryServer from 'redis-memory-server';
+import { v4 as uuidv4 } from 'uuid';
+import { waitTime } from '../src/utils';
+const redisCacheKey = (cacheKey = uuidv4()): string => {
+    return `redis:cache:${cacheKey}`;
+};
+
 describe('RedisService', () => {
     let redisService: RedisService;
     let config: Config;
