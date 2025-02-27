@@ -1,6 +1,6 @@
 {
   "name": "@myria/redis-js",
-  "version": "0.0.1-alpha",
+  "version": "0.0.2-alpha",
   "description": "Interact with redis cache follow CQRS pattern",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
