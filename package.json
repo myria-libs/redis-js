@@ -29,20 +29,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/myria-libs/npm-template-typescript.git"
+    "url": "git+https://github.com/myria-libs/redis-js.git"
   },
   "keywords": [
     "myria",
-    "template",
-    "npm-template",
-    "npm-typescript"
+    "redis",
+    "sdk-js",
+    "cqrs"
   ],
   "author": "@myria",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/myria-libs/npm-template-typescript/issues"
+    "url": "https://github.com/myria-libs/redis-js/issues"
   },
-  "homepage": "https://github.com/myria-libs/npm-template-typescript#readme",
+  "homepage": "https://github.com/myria-libs/redis-js#readme",
   "devDependencies": {
     "@types/jest": "^29.5.11",
     "@types/node": "^20.14.10",
