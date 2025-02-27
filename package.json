@@ -10,7 +10,6 @@
     "build": "tsc",
     "pretest": "rimraf coverage",
     "test": "jest --config ./configs/jest.config.ts",
-    "test:ci": "jest --config ./configs/jest-ci.config.ts",
     "lint": "eslint \"{src,tests}/**/*.ts\" --config ./configs/.eslintrc.cjs",
     "lint:fix": "npm run lint -- --fix",
     "prettier:format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\" \"configs/**/*\" --config configs/.prettierrc",

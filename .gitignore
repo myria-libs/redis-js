@@ -58,4 +58,3 @@ server/jest-stare
 jest-stare
 .env
 **/prisma/generated/**
-package-lock.json

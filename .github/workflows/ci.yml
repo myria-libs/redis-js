@@ -26,10 +26,10 @@ jobs:
               with:
                   node-version: 18
             - name: Install dependencies
-              run: npm install
+              run: npm ci
             - name: Verify Lint
               run: npm run lint
             - name: Build package
               run: npm run build
             - name: Verify Unit test
-              run: npm run test:ci
+              run: npm run test
